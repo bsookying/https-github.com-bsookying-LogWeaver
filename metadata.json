@@ -1,0 +1,12 @@
+{
+  "name": "LogWeaver - Syslog Security Story Simulator",
+  "description": "A web-based security syslog story simulator designed for security professionals to generate high-fidelity, repeatable, and customizable attack narratives. This tool helps demonstrate the value of security platforms (like SIEMs or XDRs) by providing a consistent stream of realistic log data for testing parsing rules, correlation logic, and threat detection capabilities.",
+  "requestFramePermissions": [],
+  "ports": [
+    {
+      "port": 514,
+      "protocol": "udp",
+      "description": "Port for sending syslog messages."
+    }
+  ]
+}
