@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  logweaver:
+    # Build the Docker image from the Dockerfile in the current directory
+    build: .
+    # Name the container for easier management
+    container_name: logweaver_web
+    # Map port 8080 on the host to port 80 in the container
+    # You can then access the app at http://<your_ubuntu_ip>:8080
+    ports:
+      - "8080:80"
+    # Restart the container automatically if it stops
+    restart: unless-stopped
